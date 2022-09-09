@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class and objects</title>
+</head>
+<body>
+    <script>
+        class login
+        {
+            constructor(uname,upassword)
+            {
+                this.name=uname;//Anu
+                this.password=upassword;//4444
+            }
+            login_details()
+            {
+                return this.name + " " + this.upassword;
+            }
+        }
+        var u1=new login("Anu",4444);
+        console.log(u1.name);//Anu
+        console.log(u1.password);//4444
+        console.log(u1.login_details());//Anu 4444
+    </script>
+</body>
+</html>
